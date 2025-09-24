@@ -1,4 +1,4 @@
-import 'dotenv/config.js';
+import './loadEnv.js';
 import { createServer } from 'http';
 import app from './server.js';
 import { logger } from './logger.js';

@@ -1,0 +1,30 @@
+{
+  "name": "weather-app-backend",
+  "version": "1.0.0",
+  "description": "Express backend for weather app with retries, caching, rate limiting, logging, and circuit breaker.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production node src/index.js",
+    "dev": "NODE_ENV=development nodemon --watch src --ext js --exec \"node src/index.js\"",
+    "lint": "echo \"Add ESLint if needed\""
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "axios-retry": "^3.9.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "ioredis": "^5.4.1",
+    "lru-cache": "^10.2.2",
+    "pino": "^8.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "pino-pretty": "^11.2.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
